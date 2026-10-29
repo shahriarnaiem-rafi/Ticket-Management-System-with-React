@@ -3,6 +3,7 @@ import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import { useState } from "react";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const url = "./data.json";
@@ -46,6 +47,7 @@ function App() {
         ></Home>
       </Suspense>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </>
   );
 }

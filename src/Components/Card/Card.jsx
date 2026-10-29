@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 import ShowCardData from "./ShowCardData";
 const Card = ({
   CardDatas = [],
@@ -40,7 +41,7 @@ const Card = ({
 
                   <button
                     className="w-full bg-green-500 text-white rounded p-2 mt-2"
-                    onClick={() => resolvedData(datas)}
+                    onClick={() =>{ resolvedData(datas),toast("resolved")}}
                   >
                     Complete
                   </button>
