@@ -77,7 +77,7 @@ const Navbar = () => {
             </ul>
             <div className="">
               <a className="btn text-white bg-[#422AD5]">
-                <i class="fa-solid fa-plus"></i> New TIcket
+                <i className="fa-solid fa-plus"></i> New TIcket
               </a>
             </div>
           </div>

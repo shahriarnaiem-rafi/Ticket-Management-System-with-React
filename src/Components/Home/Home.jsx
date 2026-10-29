@@ -1,7 +1,6 @@
-import React from "react";
 import Card from "../Card/Card";
 
-const Home = () => {
+const Home = ({CardDatas=[]}) => {
   return (
     <>
       <section className="md:w-[1200px] md:mx-auto">
@@ -28,7 +27,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Card></Card>
+      <Card CardDatas={CardDatas}></Card>
     </>
   );
 };
