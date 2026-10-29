@@ -1,0 +1,110 @@
+[
+  {
+    "id": "TKT-1001",
+    "title": "Unable to log in",
+    "description": "Customer receives an invalid credentials error despite entering the correct password.",
+    "customer": "Alice Johnson",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-10-15T09:30:00Z"
+  },
+  {
+    "id": "TKT-1002",
+    "title": "Payment failed during checkout",
+    "description": "Payment is declined during checkout, but the customer's bank confirms sufficient funds.",
+    "customer": "Michael Smith",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2026-10-15T10:15:00Z"
+  },
+  {
+    "id": "TKT-1003",
+    "title": "Request to reset password",
+    "description": "Customer did not receive the password reset email after multiple attempts.",
+    "customer": "Sophia Brown",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-10-16T08:45:00Z"
+  },
+  {
+    "id": "TKT-1004",
+    "title": "Dashboard loading slowly",
+    "description": "The analytics dashboard takes more than 30 seconds to load.",
+    "customer": "James Wilson",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-10-16T11:20:00Z"
+  },
+  {
+    "id": "TKT-1005",
+    "title": "Update billing information",
+    "description": "Customer wants to update the credit card associated with their subscription.",
+    "customer": "Emma Davis",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2026-10-16T13:10:00Z"
+  },
+  {
+    "id": "TKT-1006",
+    "title": "Incorrect invoice amount",
+    "description": "The latest invoice includes an unexpected charge that does not match the subscription plan.",
+    "customer": "Daniel Martinez",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-10-17T07:50:00Z"
+  },
+  {
+    "id": "TKT-1007",
+    "title": "Application crashes on startup",
+    "description": "The desktop application crashes immediately after launch following the latest update.",
+    "customer": "Olivia Garcia",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2026-10-17T09:05:00Z"
+  },
+  {
+    "id": "TKT-1008",
+    "title": "Unable to upload attachments",
+    "description": "Uploading PDF attachments fails with a server error for files larger than 5 MB.",
+    "customer": "William Taylor",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-10-18T10:40:00Z"
+  },
+  {
+    "id": "TKT-1009",
+    "title": "Request account deletion",
+    "description": "Customer requests permanent deletion of their account and associated personal data.",
+    "customer": "Ava Anderson",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2026-10-18T12:25:00Z"
+  },
+  {
+    "id": "TKT-1010",
+    "title": "Email notifications not received",
+    "description": "Customer no longer receives email notifications for account activity and updates.",
+    "customer": "Noah Thomas",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-10-19T08:00:00Z"
+  },
+  {
+    "id": "TKT-1011",
+    "title": "Data export failed",
+    "description": "Exporting customer records to CSV fails with a timeout error.",
+    "customer": "Isabella Jackson",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-10-20T14:35:00Z"
+  },
+  {
+    "id": "TKT-1012",
+    "title": "Feature request for dark mode",
+    "description": "Customer requests a dark mode option to improve usability in low-light environments.",
+    "customer": "Ethan White",
+    "priority": "Low",
+    "status": "Closed",
+    "createdAt": "2026-10-21T05:15:00Z"
+  }
+]
