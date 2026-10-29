@@ -1,6 +1,6 @@
 import Card from "../Card/Card";
 
-const Home = ({CardDatas=[]}) => {
+const Home = ({CardDatas=[],inProgress,setInProgress,cardSelect,selectedCards=[],setSelectedCards,resolved,setResolved,resolvedData,resolvedCards,setResolvedCards}) => {
   return (
     <>
       <section className="md:w-[1200px] md:mx-auto">
@@ -13,7 +13,7 @@ const Home = ({CardDatas=[]}) => {
             }}
           >
             <p>In-Progress</p>
-            <h4 className="text-2xl">0</h4>
+            <h4 className="text-2xl">{inProgress}</h4>
           </div>
           <div
             className="p-20 rounded-2xl text-white"
@@ -23,11 +23,11 @@ const Home = ({CardDatas=[]}) => {
             }}
           >
             <p>Resolved</p>
-            <h4 className="text-2xl">0</h4>
+            <h4 className="text-2xl">{resolved}</h4>
           </div>
         </div>
       </section>
-      <Card CardDatas={CardDatas}></Card>
+      <Card CardDatas={CardDatas} inProgress={inProgress} setInProgress={setInProgress} cardSelect={cardSelect} selectedCards={selectedCards} setSelectedCards={setSelectedCards} resolved={resolved} setResolved={setResolved} resolvedData={resolvedData} resolvedCards={resolvedCards} setResolvedCards={setResolvedCards}></Card>
     </>
   );
 };

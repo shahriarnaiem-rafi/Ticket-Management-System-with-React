@@ -1,29 +1,46 @@
-const ShowCardData = ({ datas }) => {
+const ShowCardData = ({ datas, cardSelect }) => {
+
   return (
-    <div className="w-full bg-base-100 shadow-sm rounded-xl p-4">
+    <div
+      className="w-full bg-base-100 shadow-sm rounded-xl p-4"
+      id="cardId"
+      onClick={()=>cardSelect(datas)}
+    >
       <div className="flex flex-row items-center justify-between w-full">
         <h2 className="font-bold">{datas.title}</h2>
-        <p style={{ 
-            padding:"5px",
-            borderRadius:"10px",
-            backgroundColor: datas.status==="Open"?"lightgreen":"lightyellow",
-
-        }}><i class="fa-solid fa-circle " style={{
-            color:datas.status==="Open"?"green":"yellow"
-        }}></i>{datas.status}</p>
+        <p
+          style={{
+            padding: "5px",
+            borderRadius: "10px",
+            backgroundColor:
+              datas.status === "Open" ? "lightgreen" : "lightyellow",
+          }}
+        >
+          <i
+            className="fa-solid fa-circle "
+            style={{
+              color: datas.status === "Open" ? "green" : "yellow",
+            }}
+          ></i>
+          {datas.status}
+        </p>
       </div>
 
       <p className="my-3">{datas.description}</p>
 
       <p>
         {datas.id}
-        <span className="text-red-500 ml-6" style={{
-           color: datas.priority==="High"
-           ?"lightred"
-           :datas.priority==="Medium"
-           ?"lightyellow":"lightgreen",
-           
-        }}>
+        <span
+          className="text-red-500 ml-6"
+          style={{
+            color:
+              datas.priority === "High"
+                ? "lightred"
+                : datas.priority === "Medium"
+                  ? "lightyellow"
+                  : "lightgreen",
+          }}
+        >
           {datas.priority} Priority
         </span>
       </p>
